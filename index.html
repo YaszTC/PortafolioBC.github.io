@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <title>BRAYAN</title>
+</head>
+<body>
+
+    <div class="container">
+        <!-- encabezado y menú -->
+        <header>
+            <h1 class="gradient-text">BRAYAN</h1>
+            <nav id="nav">
+                <a href="#inicio" onclick="seleccionar()">Inicio</a>
+                <a href="#sobremi" onclick="seleccionar()" >Sobre Mí</a>
+                <a href="#curriculum" onclick="seleccionar()">Currículum</a>
+                <a href="#porfolio" onclick="seleccionar()">Porfolio</a>
+                <!-- <a href="#contacto" onclick="seleccionar()">Contacto</a> -->
+            </nav>
+
+            <!-- Icono del menu responsive -->
+            <div id="icono-nav" class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+
+        <!-- sección Inicio -->
+        <section id="inicio">
+            <div class="fila">
+                <div class="col">
+                    <p>Soy Brayan Sebastian</p>
+                    <h1 class="gradient-text">Desarollador web Fullstack junior</h1>
+                    <a href="https://api.whatsapp.com/send?phone=573227446219&text=Hola, vengo del portafolio web, quiero conversar contigo." target="_blank">Contactame</a>
+                    <a href="pdf/Hoja de vida.pdf" download>Descargar CV</a>
+                </div>
+                <div class="col">
+                    <div class="contenedor-img">
+                        <img src="img/foto.jpg" alt="" style="border-radius: .5rem;">
+                    </div>
+                </div>
+            </div>
+        </section>      
+
+        <!-- sección Sobre Mí -->
+        <section id="sobremi">
+            <div class="fila">
+                <div class="col info">
+                    <h3>Sobre Mí</h2>
+                    <h2>Soy Desarollador web Fullstack junior</h2>
+                    <p>Disfruto de buscar soluciones eficientes a los desafíos que se presentan, manteniendo siempre la profesionalidad y el orden en mi trabajo. Soy un colaborador entusiasta y siempre estoy buscando oportunidades para aprender y crecer en la industria.</p>
+                </div>
+                <div class="col" style=" display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <div class="contenedor-img" style="display: flex;align-items: center;justify-content: center;">
+                        <img src="img/Sobremii.jpg" alt="" style="border-radius: .5rem; max-width: 40%; ">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- sección Curriculum -->
+        <section id="curriculum">
+            <h3>Currículum</h3>
+            <div class="fila">
+                <div class="col">
+                    <p class="experiencia">Experiencia</p>
+                    <h2>Mas de 5 años de experiencia como <span class="txtEspecial">Desarollador</span></h2>
+                </div>
+                <div class="col">
+                    <div class="info">
+                        <div class="item">
+                            <span class="circulo"></span>
+                            <h4>Wiklitec</h4>
+                            <p>Desarollo web (2021 - Actualmente)</p>
+                        </div>
+                        <div class="item">
+                            <span class="circulo"></span>
+                            <h4>Zyrux</h4>
+                            <p>Aplicativo de escritorio (2019-2021)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- sección porfolio -->
+        <section id="porfolio">
+            <h3>Porfolio</h3>
+            <div class="fila" >
+                <div class="col" style="border-radius: .5rem;">
+                    <a href="img/WikliLogo.png" data-lightbox="galeria" class="trabajo" data-title="Wiklitec"><img src="img/WikliLogo.png" style="border-radius: .3rem;" alt="">
+                        <p class="desc">Wiklitec</p>
+                    </a>
+                    <a href="img/InfoWikli.png" data-lightbox="galeria"></a>
+                    <a href="img/DashboardWikli.png" data-lightbox="galeria"></a>
+                    <a href="img/EstadisticasWikli.png" data-lightbox="galeria"></a>
+                    <a href="img/SedesWikli.png" data-lightbox="galeria"></a>
+                    <a href="img/CrmWikli.png" data-lightbox="galeria"></a>
+                    <a href="img/Prefact.png" data-lightbox="galeria"></a>
+                    <a href="img/Empleados.png" data-lightbox="galeria"></a>
+                    <a href="img/Agenda.png" data-lightbox="galeria"></a>
+                    <a href="img/HistorialClinico.png" data-lightbox="galeria"></a>
+                    <a href="img/Factura.png" data-lightbox="galeria"></a>
+                    <a href="img/Egresos.png" data-lightbox="galeria"></a>
+                    <a href="img/Productos.png" data-lightbox="galeria"></a>
+                    <a href="img/Inventarios.png" data-lightbox="galeria"></a>
+                </div>
+               
+            </div>
+        </section>
+
+        <!-- sección contacto -->
+        <!-- <section id="contacto">
+            <h3>Contacto</h3>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-square-facebook gradient-text"></i></i></a>
+                <a href="#"><i class="fa-brands fa-square-twitter gradient-text"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram gradient-text"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin gradient-text"></i></a>
+
+            </div>
+            <form action="">
+                <div class="entrada">
+                    <label for="">Nombre</label>
+                    <input type="text">
+                </div>
+                <div class="entrada">
+                    <label for="">Correo</label>
+                    <input type="text">
+                </div>
+                <div class="entrada">
+                    <label for="">Tema</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <button>Enviar</button>
+            </form>
+        </section> -->
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/lightbox.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
